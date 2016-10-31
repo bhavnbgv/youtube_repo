@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="full1">
+    <head>
+        <title> youtube videos search </title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+        
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+        <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
+        
+        <script type="text/javascript" src="/static/js/jquery-3.1.0.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/jquery.mobile-1.4.5.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+   
+    <body>
+    
+    <div class="container-fluid">
+    <h3>Search youtube videos in a specific channel or enter keyword to search videos irrespective of channel </h3>
+    <br><br>
+    </div>
+    <div class="row">
+            <div class="col-md-1"></div>
+           <div class="col-md-3">
+               <label>Channel Id: <label/><input id="channelid" type="text"/>
+              </div>
+            <div class="col-md-2">
+                <label>Search Keyword: <label/><input id="searchkeyword" type="text"/>
+                </div>
+                 <div class="col-md-1"><br>
+               <input id="search_btn" type="button" value="search"/>
+               <input type="hidden" id="next_page" value="">
+               <input type="hidden" id="prev_page" value="">
+               </div>
+               <div class="col-md-1"><br>
+               <input id="rest_btn" type="button" value="RestApiList"/>
+               </div>
+                </div>
+                <br><br>
+                <div class="row">
+                <div class="col-md-1"></div>
+                <div id="video-data" class="col-md-8">
+                <!--   <h3 id="video-data" ></h3> -->
+                </div>
+                </div>
+                <div class="row">
+                <br><br>
+                <div class="col-md-3"></div>
+                <div class="col-md-1"><input type="button" id="prev-btn" value="prev"></div>
+                <div class="col-md-1"><input type="button" id="next-btn" value="next"></div>
+                </div>
+                
+        
+    </body>
+    <script>
+
+$(document).ready(function () {
+	
+$( "#rest_btn" ).click(function() {
+  window.location = "/video_list/";
+});
+	
+
+$( "#search_btn" ).click(function() {
+
+var ses="";
+
+channelid=$('#channelid').val()
+searchkeyword=$('#searchkeyword').val()
+ses="{{ request.session.session_key }}"
+
+$.ajax({
+  type: "POST",
+  url: "/",
+  data: { "channelid": channelid, "searchkeyword": searchkeyword, 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+  success:function(msg){
+  if(msg['videos_list']){
+  //alert(msg['error']);
+  $('#video-data').html(msg['videos_list']);
+  console.log(msg)
+  //window.location = "/accounts/register_usermob/";
+  }
+  if(msg['next_page'] != ""){
+	  $('#next-btn').show();
+	  $('#next_page').val(msg['next_page']);
+  }
+  if(msg['prev_page'] != ""){
+	  $('#prev-btn').show();
+	  $('#prev_page').val(msg['prev_page']);
+  }
+  else{
+  console.log(msg)
+  //$('#otpref').append('otp reference no : ' + msg['otp_refr']);
+  //alert('otp reference number is ' + msg['otp_refr'] +  '  otp number is ' + msg['otp']);
+  //window.location = "/otp_reference/";
+  }
+},
+})});
+
+$( "#next-btn" ).click(function() {
+
+	var ses="";
+	
+	pagetoken = $('#next_page').val();
+
+	channelid=$('#channelid').val()
+	searchkeyword=$('#searchkeyword').val()
+	ses="{{ request.session.session_key }}"
+
+	$.ajax({
+	  type: "POST",
+	  url: "/",
+	  data: { "channelid": channelid, "searchkeyword": searchkeyword, 'csrfmiddlewaretoken': '{{ csrf_token }}', 'pagetoken' : pagetoken},
+	  success:function(msg){
+	  if(msg['videos_list']){
+	  //alert(msg['error']);
+	  $('#video-data').html(msg['videos_list']);
+	  console.log(msg)
+	  //window.location = "/accounts/register_usermob/";
+	  }
+	  if(msg['next_page'] != ""){
+		  $('#next-btn').show();
+		  $('#next_page').val(msg['next_page']);
+	  }
+	  if(msg['prev_page'] != ""){
+		  $('#prev-btn').show();
+		  $('#prev_page').val(msg['prev_page']);
+	  }
+	  else{
+	  console.log(msg)
+	  //$('#otpref').append('otp reference no : ' + msg['otp_refr']);
+	  //alert('otp reference number is ' + msg['otp_refr'] +  '  otp number is ' + msg['otp']);
+	  //window.location = "/otp_reference/";
+	  }
+	},
+	})});
+	
+$( "#prev-btn" ).click(function() {
+
+	var ses="";
+	
+	pagetoken = $('#prev_page').val();
+
+	channelid=$('#channelid').val()
+	searchkeyword=$('#searchkeyword').val()
+	ses="{{ request.session.session_key }}"
+
+	$.ajax({
+	  type: "POST",
+	  url: "/",
+	  data: { "channelid": channelid, "searchkeyword": searchkeyword, 'csrfmiddlewaretoken': '{{ csrf_token }}', 'pagetoken' : pagetoken},
+	  success:function(msg){
+	  if(msg['videos_list']){
+	  //alert(msg['error']);
+	  $('#video-data').html(msg['videos_list']);
+	  console.log(msg)
+	  //window.location = "/accounts/register_usermob/";
+	  }
+	  if(msg['next_page'] != ""){
+		  $('#next_page').val(msg['next_page']);
+	  }
+	  if(msg['prev_page'] != ""){
+		  $('#prev_page').val(msg['prev_page']);
+	  }
+	  else{
+	  console.log(msg)
+	  //$('#otpref').append('otp reference no : ' + msg['otp_refr']);
+	  //alert('otp reference number is ' + msg['otp_refr'] +  '  otp number is ' + msg['otp']);
+	  //window.location = "/otp_reference/";
+	  }
+	},
+	})});
+
+});
+</script>
+</html>
