@@ -1,0 +1,639 @@
+.navaspan {
+    position: absolute;
+    z-index: 1;
+    margin-left: -153px;
+    margin-top: -23px;
+}
+
+.sidemenu {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    top: 0px;
+    left: 0;
+    width: 90%;
+    position: absolute;
+    height: 43.7em;
+    border-right: 1px solid #EF5350;
+    z-index: 2;
+}
+
+.menudiv {
+    border: 1px solid black !important;
+    border: 1px solid #EF5350 !important;
+}
+
+.menudiv a {
+    display: #fff;
+    color: #fff;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+.menudiv a.active {
+    background-color: #fff;
+    color: #EF5350;
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+.list-group-itemm {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    background-color: #fff;
+    font-family: roboto;
+}
+
+a.list-group-item-success,
+button.list-group-item-success {
+   color: #fff;
+    text-decoration: none;
+      border-top: 1px solid #EF5350;
+    border-bottom: 1px solid #EF5350;
+    background-color: #fff;
+    background: #FD817F;
+    font-weight: bold;
+    border-right:0px !important;
+}
+
+/*
+a.list-group-item-success:focus,
+a.list-group-item-success:hover,
+button.list-group-item-success:focus,
+button.list-group-item-success:hover {
+    color: #EF5350;
+    background-color: #fff;
+    border-top: 1px solid #EF5350;
+    border-left: 0px;
+    border-bottom: 1px solid #EF5350;
+    border-right: 0px solid #000;
+    width: 101%;
+    background: white;
+    z-index: 4;
+    font-family: roboto;
+}
+*/
+
+
+
+#selected_section{
+    
+ color: #EF5350;
+    background-color: #fff;
+    border-top: 1px solid #EF5350;
+    border-left: 0px;
+    border-bottom: 1px solid #EF5350;
+    border-right: 0px solid #000;
+    width: 101%;
+    background: white;
+    z-index: 4;
+    font-family: roboto;
+}
+.btnisdisabled {
+    color: #EF5350;
+    background-color: #fff;
+    font-family: roboto;
+    pointer-events: none;
+    @include opacity(0.7);
+}
+
+.profilehead {
+    font-size: 24px;
+    color: #555;
+    font-weight: 550;
+    font-family: roboto;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.profileheadone {
+    font-size: 24px;
+    color: #555;
+    font-weight: 550;
+    font-family: roboto;
+    padding-top: 0px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.#conbtnn {
+    font-size: 24px;
+    color: #555;
+    font-weight: 550;
+    font-family: roboto;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.leftsidetxtOne {
+    font-family: roboto;
+    margin-top: 200px;
+    font-size: 11px;
+    color: #EF5350;
+    text-align: center;
+}
+
+.leftsidetxtTwo {
+    font-family: roboto;
+    font-size: 11px;
+    color: #555;
+    text-align: center;
+}
+
+.blog-sidebar {
+    background-color: #F5F5F5;
+}
+
+.background {
+    position: relative;
+    background-color: #F5F5F5;
+    height: 43.5em;
+    display: table-row;
+}
+
+.spanone {
+    margin-top: 7%;
+}
+
+.seloptionjodi {
+    float: left;
+    padding-right: 24px;
+    width: 24.5%;
+}
+
+.headermenu {
+    float: left;
+    padding: 0 25px;
+    font-family: roboto;
+    font-size: 18px;
+}
+
+.rowtxt {
+    margin-left: 15%;
+    margin-top: 8%;
+    margin-right: 15%;
+}
+
+.rowtxtt {
+    margin-left: 15%;
+    margin-top: 8%;
+    margin-right: 15%;
+}
+
+.rowtxtone {
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.rowtxttwo {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+
+#conbtnn {
+    display: inline-block;
+    margin-top: 21%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px 45px;
+    border: 1px solid #CBCBCB;
+    color: #000;
+    background: none;
+    box-shadow: 0px 1px 3px #CBCBCB;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: roboto;
+    width: 220px;
+    height: 54px;
+}
+
+#conbtnnn {
+    display: inline-block;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px 45px;
+    border: 1px solid #CBCBCB;
+    color: #000;
+    background: none;
+    box-shadow: 0px 1px 3px #CBCBCB;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: roboto;
+    width: 220px;
+    height: 54px;
+}
+
+#conbtnnn:active {
+    background: #174F00;
+    color: #fff;
+}
+
+#conbtnnn:hover {
+    background: #174F00;
+    color: #fff;
+}
+
+#conbtnn:active {
+    background: #174F00;
+    color: #fff;
+}
+
+#conbtnn:hover {
+    background: #174F00;
+    color: #fff;
+}
+
+.top_cont li {
+    padding-top: 14px;
+    color: #EF5350;
+    font-size: 18px;
+    border-right: 1px solid #EF5350;
+    padding-bottom: 7px;
+    font-family: roboto;
+}
+
+.conbtn {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.img-pad {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.hide {
+    display: none;
+}
+
+.conbtn {
+    vertical-align: middle;
+    width: 220px;
+}
+
+.form-groupp {
+    margin-bottom: 15px;
+    font-family: roboto;
+    margin-top: 25px;
+}
+
+.form-controll {
+    display: inline;
+    width: 37%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-color: #C2C2C2 !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #C2C2C2;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    /*    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);*/
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.form-controlll {
+    display: block;
+    width: 179px;
+    height: 34px;
+    padding: 6px 12px;
+    margin-top: -12%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-color: #C2C2C2 !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #C2C2C2;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    /*    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);*/
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.glypicon {
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    color: green;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* One radio button per line */
+
+[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    font-family: roboto;
+}
+
+
+/* One radio button per line */
+
+label .chngmg {
+    display: block;
+    cursor: pointer;
+    line-height: 2.5;
+    font-size: 1.5em;
+}
+
+[type="radio"] + span {
+    display: block;
+}
+
+
+/* the basic, unchecked style */
+
+[type="radio"] + span:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 0.125em solid #1382BA;
+    box-shadow: 0 0 0 0.15em #fff;
+    margin-right: 0.75em;
+    transition: 0.5s ease all;
+}
+
+
+/* the checked style using the :checked pseudo class */
+
+[type="radio"]:checked + span:before {
+    background: white;
+    box-shadow: 0 0 0 0.15em #fff;
+}
+
+
+/* never forget focus styling */
+
+[type="radio"]:focus + span:after {
+    /*  content: '\0020\2190';*/
+    font-size: 1.5em;
+    line-height: 1;
+    vertical-align: -0.125em;
+}
+
+
+/*<---togglebutton--->*/
+
+.togglee {
+    margin: 0px;
+    background-color: #1382BA;
+    border-radius: 6px;
+    color: #fff;
+    overflow: auto;
+    float: left;
+    box-shadow: 0 3px 0 0 #1382BA;
+    font-family: roboto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 11.5em;
+    height: 50px;
+    border: 0 solid #E25340;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    color: #fff;
+    text-decoration: none;
+    font-family: roboto;
+    font-weight: 100;
+}
+
+.btn.active {
+    background-color: #B71C1C;
+    color: #fff;
+    box-shadow: 0 3px 0 0 #820303;
+    float: left;
+    width: 11.5em;
+    height: 50px;
+    font-family: roboto;
+}
+
+.togglee:active {
+    background-color: #B71C1C;
+    color: #fff;
+    box-shadow: 0 3px 0 0 #820303;
+    float: left;
+    width: 11.5em;
+    height: 50px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 920px) {
+    .sidemenu {
+        font-size: 18px;
+        width: 100%;
+        position: relative;
+        margin-top: -55px;
+        height: 18em;
+    }
+    .row {
+        width: 100%;
+        margin-left: 6%;
+    }
+    .profilehead {
+        width: 80%;
+    }
+    .leftsidetxtOne {
+        margin-top: 60px;
+    }
+    .background {
+        background-position: auto;
+        height: auto;
+        background-color: #F5F5F5;
+    }
+    #conbtnnn {
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    #conbtnn {
+        margin-top: 21%;
+        margin-bottom: 10%;
+    }
+    .rowtxt {
+        margin-left: 1%;
+        margin-top: 8%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sidemenu {
+        font-size: 18px;
+        width: 100%;
+        position: relative;
+       margin-top: -55px;
+        height: 18em;
+    }
+    .sidemenu ul {
+        margin: 0;
+    }
+    .profilehead {
+        width: 80%;
+    }
+    .rowtxt {
+        margin-left: 1%;
+        margin-top: 8%;
+        width: 100%;
+        text-align: center;
+    }
+    .rowtxtt {
+        margin-left: 0%;
+        margin-top: 8%;
+        width: 100%;
+        text-align: center;
+    }
+    .rowtxttwo {
+        width: 100%;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: 6%;
+        margin-left: 3%;
+    }
+    .navaspan {
+        position: absolute;
+        z-index: -1;
+        margin-left: -153px;
+        margin-top: -44px;
+    }
+    .background {
+        background-position: auto;
+        height: auto;
+        background-color: #F5F5F5;
+    }
+    .leftsidetxtOne {
+        margin-top: 60px;
+    }
+    .conbtn {
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+
+
+/*<---Responsive--->*/
+
+@media screen and (max-width: 640px) {
+    .sidemenu {
+        font-size: 18px;
+        width: 99%;
+        position: relative; 
+        margin-top: -55px;
+        height: 18em;
+    }
+    .sidemenu ul {
+        margin: 0;
+/*         text-align: center;*/
+    }
+    .profilehead {
+        width: 100%;
+        text-align: center;
+    }
+    .rowone {
+        width: 100%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .rowtwo {
+        width: 100%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    .rowtwoo {
+        width: 100%;
+        margin-left: -18%;
+        text-align: center;
+    }
+    .background {
+        background-position: auto;
+        height: auto;
+        background-color: #F5F5F5;
+    }
+    .leftsidetxtOne {
+        margin-top: 60px;
+    }
+    .conbtn {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 10%;
+    }
+    .noPadding {
+        padding: 0 !important;
+    }
+    .form-controlll {
+        margin-left: -34%;
+    }
+    .form-groupp {
+        margin-left: 25%
+    }
+    #conbtnn {
+        margin-bottom: 10%;
+        margin-top: 43%;
+    }
+    #conbtnnn {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .navaspan {
+        position: absolute;
+        z-index: -1;
+        margin-left: -153px;
+        margin-top: -46px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidemenu li {
+        width: 100%;
+        text-align: left;
+        border-right: 0;
+/*        text-align: center;*/
+    }
+    .profilehead {
+        width: 100%;
+    }
+    .form-groupp {
+        margin-left: 25%
+    }
+}

@@ -78,18 +78,18 @@ WSGI_APPLICATION = 'youtube_search.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
     #'default': {
-    #'ENGINE': 'django.db.backends.mysql',
-    #'NAME': 'youtube_db',
-    #'USER': 'root',
-    #'PASSWORD': 'password',
-    #'HOST': 'localhost',
-    #'PORT': '3306',
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     #}
+    'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'd1nudr95ff041g',
+    'USER': 'vbqnewqlievnel',
+    'PASSWORD': 'cgQa7GiM49ErB4FA8yNf1E2F9d',
+    'HOST': 'ec2-54-163-240-101.compute-1.amazonaws.com',
+    'PORT': '5432',
+    }
 }
 
 
@@ -111,3 +111,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "youtube_search","collect_static","static")
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "webapp" , "static"),
+    #'/var/www/static/',
+)
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
