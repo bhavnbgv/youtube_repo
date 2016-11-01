@@ -25,29 +25,25 @@ body{
 }
 
 
-.full {
-  background: url('../images/loans2.jpg') no-repeat center center fixed; 
+.full { 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .full1  {
-  background: url('../images/pattern3-01.jpg') no-repeat center center fixed; 
   -webkit-background-size: 100% 900px;
   -moz-background-size: 100% 900px;
   -o-background-size: 100% 900px;
   background-size: 100% 900px;
 }
 .full2  {
-  background: url('../images/pattern3-01.jpg') no-repeat center center fixed; 
   -webkit-background-size: 100% 900px;
   -moz-background-size: 100% 900px;
   -o-background-size: 100% 900px;
   background-size: 100% 900px;
 }
-.full45  {
-  background: url('../images/patternbackground.jpg') no-repeat center center fixed; 
+.full45  { 
   -webkit-background-size: 100% 900px;
   -moz-background-size: 100% 900px;
   -o-background-size: 100% 900px;
